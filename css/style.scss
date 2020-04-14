@@ -11,7 +11,8 @@ body {
 
 .checkbox_01,
 .checkbox_02,
-.checkbox_03 {
+.checkbox_03,
+.checkbox_04 {
     @include flexCenter();
 }
 
