@@ -3,15 +3,13 @@
     --barbgcolor: #1D72B5;
     --barbgcolor-1: #1D72B5;
     --bartextcolor-1: #fff;
+    --linkColor: #333;
+    --linkColorHover: #1D72B5;
 }
 
 $rgba:#1D72B5;
 * {
     box-sizing: inherit;
-}
-
-a {
-    text-decoration: none;
 }
 
 .temp {
@@ -21,17 +19,29 @@ a {
 }
 
 .layout02 {
+    font-family: 'Roboto Condensed';
     background-color: var(--bgcolor);
     box-sizing: border-box;
+    a {
+        text-decoration: none;
+        color: var(--linkColor);
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+        }
+    }
     p {
         margin: 0;
         padding: 0;
     }
     .important {
         display: grid;
-        grid-template-columns: 1fr 260px;
+        grid-template-columns: 1fr 300px;
         // height: 310px;
-        grid-column-gap: 10px;
+        grid-column-gap: 15px;
         border: solid 1px #333;
         .left {
             a {
@@ -85,7 +95,7 @@ a {
         }
     }
     .element {
-        margin-top: 10px;
+        margin-top: 15px;
         box-shadow: 0 1px 5px #bebebe;
         border-radius: 5px;
         .bar {
@@ -98,6 +108,42 @@ a {
             background-repeat: no-repeat;
             background-position: 5px center;
             background-size: 25px;
+        }
+        .itemview {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            div {
+                &:first-child {
+                    h3 {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 18px;
+                        padding-bottom: 10px;
+                    }
+                    img {
+                        width: 150px;
+                        float: left;
+                        padding-right: 15px;
+                    }
+                    p {
+                        text-align: justify;
+                    }
+                }
+                &:last-child {
+                    li {
+                        background: url(img/icon3.gif) no-repeat left center;
+                        padding-left: 15px;
+                        &:hover a {
+                            color: var(--linkColorHover);
+                        }
+                    }
+                    li:not(:first-child) {
+                        margin-top: 10px;
+                    }
+                }
+            }
         }
     }
 }
