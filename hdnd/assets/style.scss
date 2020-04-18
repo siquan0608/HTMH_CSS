@@ -1,0 +1,103 @@
+:root {
+    --bgcolor: #fff;
+    --barbgcolor: #1D72B5;
+    --barbgcolor-1: #1D72B5;
+    --bartextcolor-1: #fff;
+}
+
+$rgba:#1D72B5;
+* {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.temp {
+    width: 760px;
+    float: left;
+    margin-left: calc(50% - 380px);
+}
+
+.layout02 {
+    background-color: var(--bgcolor);
+    box-sizing: border-box;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    .important {
+        display: grid;
+        grid-template-columns: 1fr 260px;
+        // height: 310px;
+        grid-column-gap: 10px;
+        border: solid 1px #333;
+        .left {
+            a {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: block;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                p {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: rgba($rgba, .5);
+                    color: #fff;
+                }
+            }
+        }
+        .right {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            a {
+                display: grid;
+                grid-template-columns: 80px 1fr;
+                grid-column-gap: 10px;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .banner {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 5px;
+        img {
+            width: 100%;
+        }
+    }
+    .element {
+        margin-top: 10px;
+        box-shadow: 0 1px 5px #bebebe;
+        border-radius: 5px;
+        .bar {
+            background-color: var(--barbgcolor-1);
+            padding: 7px;
+            padding-left: 40px;
+            color: var(--bartextcolor-1);
+            border-radius: 5px 5px 0 0;
+            background-image: url(img/icon.png);
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            background-size: 25px;
+        }
+    }
+}

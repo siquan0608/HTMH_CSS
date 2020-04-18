@@ -1,0 +1,124 @@
+:root {
+  --bgcolor: #fff;
+  --barbgcolor: #1D72B5;
+  --barbgcolor-1: #1D72B5;
+  --bartextcolor-1: #fff;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.temp {
+  width: 760px;
+  float: left;
+  margin-left: calc(50% - 380px);
+}
+
+.layout02 {
+  background-color: var(--bgcolor);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.layout02 p {
+  margin: 0;
+  padding: 0;
+}
+
+.layout02 .important {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 260px;
+      grid-template-columns: 1fr 260px;
+  grid-column-gap: 10px;
+  border: solid 1px #333;
+}
+
+.layout02 .important .left a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.layout02 .important .left a img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.layout02 .important .left a p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(29, 114, 181, 0.5);
+  color: #fff;
+}
+
+.layout02 .important .right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+}
+
+.layout02 .important .right a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  grid-column-gap: 10px;
+}
+
+.layout02 .important .right a img {
+  width: 100%;
+}
+
+.layout02 .important .right a p {
+  margin: 0;
+  padding: 0;
+}
+
+.layout02 .banner {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+}
+
+.layout02 .banner img {
+  width: 100%;
+}
+
+.layout02 .element {
+  margin-top: 10px;
+  -webkit-box-shadow: 0 1px 5px #bebebe;
+          box-shadow: 0 1px 5px #bebebe;
+  border-radius: 5px;
+}
+
+.layout02 .element .bar {
+  background-color: var(--barbgcolor-1);
+  padding: 7px;
+  padding-left: 40px;
+  color: var(--bartextcolor-1);
+  border-radius: 5px 5px 0 0;
+  background-image: url(img/icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */
