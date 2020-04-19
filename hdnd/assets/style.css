@@ -7,6 +7,11 @@
   --linkColorHover: #1D72B5;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -18,33 +23,39 @@
   margin-left: calc(50% - 380px);
 }
 
-.layout02 {
+.layout02,
+.layout03 {
   font-family: 'Roboto Condensed';
   background-color: var(--bgcolor);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.layout02 a {
+.layout02 a,
+.layout03 a {
   text-decoration: none;
   color: var(--linkColor);
 }
 
-.layout02 ul {
+.layout02 ul,
+.layout03 ul {
   margin: 0;
   padding: 0;
 }
 
-.layout02 ul li {
+.layout02 ul li,
+.layout03 ul li {
   list-style: none;
 }
 
-.layout02 p {
+.layout02 p,
+.layout03 p {
   margin: 0;
   padding: 0;
 }
 
-.layout02 .important {
+.layout02 .important,
+.layout03 .important {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 300px;
@@ -53,14 +64,16 @@
   border: solid 1px #333;
 }
 
-.layout02 .important .left a {
+.layout02 .important .left a,
+.layout03 .important .left a {
   position: relative;
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.layout02 .important .left a img {
+.layout02 .important .left a img,
+.layout03 .important .left a img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -68,7 +81,8 @@
   left: 0;
 }
 
-.layout02 .important .left a p {
+.layout02 .important .left a p,
+.layout03 .important .left a p {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -78,7 +92,8 @@
   color: #fff;
 }
 
-.layout02 .important .right {
+.layout02 .important .right,
+.layout03 .important .right {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -86,7 +101,8 @@
   grid-row-gap: 10px;
 }
 
-.layout02 .important .right a {
+.layout02 .important .right a,
+.layout03 .important .right a {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80px 1fr;
@@ -94,16 +110,19 @@
   grid-column-gap: 10px;
 }
 
-.layout02 .important .right a img {
+.layout02 .important .right a img,
+.layout03 .important .right a img {
   width: 100%;
 }
 
-.layout02 .important .right a p {
+.layout02 .important .right a p,
+.layout03 .important .right a p {
   margin: 0;
   padding: 0;
 }
 
-.layout02 .banner {
+.layout02 .banner,
+.layout03 .banner {
   margin-top: 10px;
   display: -ms-grid;
   display: grid;
@@ -112,18 +131,21 @@
   grid-row-gap: 5px;
 }
 
-.layout02 .banner img {
+.layout02 .banner img,
+.layout03 .banner img {
   width: 100%;
 }
 
-.layout02 .element {
+.layout02 .element,
+.layout03 .element {
   margin-top: 15px;
   -webkit-box-shadow: 0 1px 5px #bebebe;
           box-shadow: 0 1px 5px #bebebe;
   border-radius: 5px;
 }
 
-.layout02 .element .bar {
+.layout02 .element .bar,
+.layout03 .element .bar {
   background-color: var(--barbgcolor-1);
   padding: 7px;
   padding-left: 40px;
@@ -135,7 +157,8 @@
   background-size: 25px;
 }
 
-.layout02 .element .itemview {
+.layout02 .element .itemview,
+.layout03 .element .itemview {
   padding: 10px;
   display: -ms-grid;
   display: grid;
@@ -144,33 +167,78 @@
   grid-column-gap: 20px;
 }
 
-.layout02 .element .itemview div:first-child h3 {
+.layout02 .element .itemview div:first-child h3,
+.layout03 .element .itemview div:first-child h3 {
   margin: 0;
   padding: 0;
   font-size: 18px;
   padding-bottom: 10px;
 }
 
-.layout02 .element .itemview div:first-child img {
+.layout02 .element .itemview div:first-child img,
+.layout03 .element .itemview div:first-child img {
   width: 150px;
   float: left;
   padding-right: 15px;
 }
 
-.layout02 .element .itemview div:first-child p {
+.layout02 .element .itemview div:first-child p,
+.layout03 .element .itemview div:first-child p {
   text-align: justify;
 }
 
-.layout02 .element .itemview div:last-child li {
+.layout02 .element .itemview div:last-child li,
+.layout03 .element .itemview div:last-child li {
   background: url(img/icon3.gif) no-repeat left center;
   padding-left: 15px;
 }
 
-.layout02 .element .itemview div:last-child li:hover a {
+.layout02 .element .itemview div:last-child li:hover a,
+.layout03 .element .itemview div:last-child li:hover a {
   color: var(--linkColorHover);
 }
 
-.layout02 .element .itemview div:last-child li:not(:first-child) {
+.layout02 .element .itemview div:last-child li:not(:first-child),
+.layout03 .element .itemview div:last-child li:not(:first-child) {
   margin-top: 10px;
+}
+
+.layout03 {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.layout03 .topicons {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+}
+
+.layout03 .topicons a {
+  background-color: var(--barbgcolor);
+  color: var(--bartextcolor-1);
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 7px;
+  padding-top: 40px;
+  text-align: center;
+  background-image: url(img/icon.png);
+  background-repeat: no-repeat;
+  background-position: center 7px;
+  background-size: 30px;
+}
+
+.layout03 .topicons img {
+  width: 30px;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
