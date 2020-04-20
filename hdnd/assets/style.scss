@@ -159,13 +159,14 @@ $rgba:#1D72B5;
     margin: 0 auto;
     min-height: 100vh;
     .topicons {
-        position: sticky;
+        position: fixed;
         top: 5px;
-        display: grid;
-        justify-content: space-between;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-column-gap: 5px;
+        left: 5px;
+        right: 5px;
+        display: flex;
+        justify-content: space-between;            
         a {
+            width: calc(20% - 3px);
             background-color: var(--barbgcolor);
             color: var(--bartextcolor-1);
             border-radius: 3px;
